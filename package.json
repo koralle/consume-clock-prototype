@@ -10,6 +10,8 @@
     "pages:deploy": "pnpm run build && wrangler pages deploy ./public",
     "fmt": "prettier -c ./app/**/*.{ts,tsx}",
     "fmt:fix": "prettier -w ./app/**/*.{ts,tsx}",
+    "lint": "eslint ./app/**/*.{ts,tsx}",
+    "lint:fix": "eslint --fix ./app/**/*.{ts,tsx}"
   },
   "dependencies": {
     "@remix-run/cloudflare": "^1.16.0",
@@ -26,7 +28,10 @@
     "@remix-run/eslint-config": "^1.16.0",
     "@types/react": "^18.0.35",
     "@types/react-dom": "^18.0.11",
-    "eslint": "^8.38.0",
+    "@typescript-eslint/parser": "^6.2.1",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-react": "^7.33.1",
     "prettier": "^3.0.1",
     "typescript": "^5.0.4",
     "wrangler": "^3.1.1"
