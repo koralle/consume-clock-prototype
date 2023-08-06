@@ -20,6 +20,9 @@ dependencies:
   '@remix-run/react':
     specifier: ^1.16.0
     version: 1.16.0(react-dom@18.2.0)(react@18.2.0)
+  '@vanilla-extract/css':
+    specifier: ^1.12.0
+    version: 1.12.0
   isbot:
     specifier: ^3.6.8
     version: 3.6.8
